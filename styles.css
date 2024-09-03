@@ -2,7 +2,11 @@
     width:100%;
 }
 
-/* .wilder-logo{
-    left: 30%;
-    width: 75%;
-} */
+.wilder-logo-container{
+    left: 10%;
+    top: 10%;
+}
+
+.social-icons{
+    color:#1F3109;
+}
