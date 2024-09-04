@@ -1,12 +1,95 @@
-.hero-img{
-    width:100%;
+
+
+/* Base styles for the hero image */
+.hero-img {
+    width: 100vw; /* Use viewport width to ensure it covers full width */
+    height: 100vh; /* Use viewport height for full screen coverage */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
 }
 
-.wilder-logo-container{
-    left: 10%;
-    top: 10%;
+.wilder-logo{
+    width: 90%;
 }
 
-.social-icons{
-    color:#1F3109;
+/* Styles for the logo container */
+.wilder-logo-container {
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    top: 20%; /* Center vertically */
+    transform: translate(-50%, -50%); /* Adjusts positioning to be centered */
+    width: 80%; /* Adjust as needed */
+    max-width: 600px; /* Optional max-width */
+    text-align: center; /* Center align contents */
+    background: rgba(255, 255, 255, 0); /* Make it transparent */
 }
+
+/* Additional button styles */
+.get-wild-btn {
+    background-color: #A0B098;
+    color: #1F3109;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 0.8rem;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Social media icon styles */
+.social-icons {
+    color: #1F3109;
+    font-size: 1.5em;
+}
+
+.social-buttons {
+    background: transparent;
+    border: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Media query adjustments for smaller screens */
+@media (max-width: 603px) {
+    .wilder-logo-container {
+        width: 90%; 
+        padding: 10px;
+    }
+
+    .hero-img {
+        object-fit: cover; 
+    }
+
+}
+
+@media (max-width: 550px){
+    .social-buttons{
+        font-size: 0.8rem;
+        margin: 0.5rem;
+    }
+    .get-wild-btn {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.6rem;
+    }
+}
+
+
+@media (max-width: 409px) {
+    .get-wild-btn {
+        font-size: 0.6rem;
+    }
+
+    .social-buttons {
+        font-size: 0.8rem;
+        margin: 0.2rem;
+    }
+
+    .wilder-logo-container{
+        top: 30%;
+    }
+}
+
+
+
