@@ -50,12 +50,19 @@
     text-align: center; /* Center align contents */
     background: rgba(255, 255, 255, 0); /* Keep it transparent */
     z-index: 2; /* Ensure this is above the gradient */
+    opacity: 0; /* Start hidden */
+    transition: opacity 300ms ease-in, transform 300ms ease-in; /* Fade and slide in transition */
+}
+
+.wilder-logo-container.fade-in {
+    opacity: 1; /* Fully visible */
+    transform: translate(-50%, -50%) translateY(0); /* Reset translation */
 }
 
 /* Additional button styles */
 .get-wild-btn {
-    background-color: #fbcfd1;
-    color: #1F3109;
+    background-color: #fbcfd3;
+    color: #093445;
     padding: 0.5rem 1rem;
     border: none;
     font-size: 0.8rem;
@@ -69,7 +76,7 @@
 
 /* Social media icon styles */
 .social-icons {
-    color: #1F3109;
+    color: #093445;
     font-size: 1.5em;
 }
 
