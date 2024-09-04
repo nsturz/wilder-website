@@ -1,1 +1,169 @@
+/* Container holding the hero image */
+.container {
+    position: relative; /* Position relative for absolute positioning of the pseudo-element */
+    width: 100vw; /* Ensure full width */
+    height: 100vh; /* Ensure full height */
+    overflow: hidden; /* Hide overflow to contain the gradient */
+}
+
+/* Gradient overlay to blend the top of the image */
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30%; 
+    background: linear-gradient(to bottom, #57616D, rgba(87, 97, 109, 0)); 
+    z-index: 1;
+}
+
+
+.hero-img {
+    width: 100%; /* Use percentage width to fill the container */
+    height: 100%; /* Use percentage height to fill the container */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+    position: relative; /* Position relative to ensure correct stacking */
+    z-index: 0; /* Place the image behind the gradient */
+}
+
+/* Base styles for the hero image */
+/* .hero-img {
+    width: 100vw; 
+    height: 100vh; 
+    object-fit: cover; 
+} */
+
+.wilder-logo{
+    width: 80%;
+}
+
+/* Styles for the logo container */
+.wilder-logo-container {
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    top: 20%; /* Adjust this value for correct positioning */
+    transform: translate(-50%, -50%); /* Center the element */
+    width: 80%; /* Adjust as needed */
+    max-width: 600px; /* Optional max-width */
+    text-align: center; /* Center align contents */
+    background: rgba(255, 255, 255, 0); /* Keep it transparent */
+    z-index: 2; /* Ensure this is above the gradient */
+    opacity: 0; /* Start hidden */
+    transition: opacity 500ms ease-in, transform 500ms ease-in; /* Fade and slide in transition */
+}
+
+.wilder-logo-container.fade-in {
+    opacity: 1; /* Fully visible */
+    transform: translate(-50%, -50%) translateY(0); /* Reset translation */
+}
+
+/* Additional button styles */
+.get-wild-btn {
+    text-decoration: none;
+    background-color: #fbcfd3;
+    color: #093445;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 0.8rem;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    margin: 0.5rem;
+}
+
+.get-wild-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    background-color: whitesmoke; /* Optional: Slight color change on hover */
+}
+
+.legal-text{
+    color: whitesmoke;
+    font-size: 0.5rem;
+    align-self: end;
+}
+
+.navbar-bottom {
+    bottom: 0;
+    width: 100%; /* Ensure it spans full width */
+    background: transparent; /* Keep it transparent to show the image */
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", system-ui;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+/* Social media icon styles */
+.social-icons {
+    color: #093445;
+    font-size: 1.5em;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+
+}
+
+.social-buttons {
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.social-icons:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Media query adjustments for smaller screens */
+@media (max-width: 603px) {
+    .wilder-logo-container {
+        width: 90%; 
+        padding: 10px;
+    }
+
+    .hero-img {
+        object-fit: cover; 
+    }
+
+}
+
+@media (max-width: 550px){
+    .social-buttons{
+        font-size: 0.8rem;
+        margin: 0.5rem;
+    }
+    .get-wild-btn {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 450px){
+    .wilder-logo-container{
+        top: 25%;
+    }
+}
+
+
+@media (max-width: 409px) {
+    .get-wild-btn {
+        font-size: 0.6rem;
+    }
+
+    .social-buttons {
+        font-size: 0.8rem;
+        margin: 0.2rem;
+    }
+
+    .wilder-logo-container{
+        top: 30%;
+    }
+}
+
+
 

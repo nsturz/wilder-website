@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/3a4dd66418.js" crossorigin="anonymous"></script>    
+</head>
+<body>
+    <div class="wilder-logo-container position-absolute">
+        <div class="d-flex justify-content-center mt-0">
+            <img src="images/logo-cream.png" alt="" class="wilder-logo">
+        </div>
+        <div class="">
+            <div class="">
+                <a href="https://www.facebook.com/thebandwilder/" class="social-buttons">
+                    <i class="social-icons fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/thebandwilder/" class="social-buttons">
+                    <i class="social-icons fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://x.com/thebandwilder/" class="social-buttons">
+                    <i class="social-icons fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://open.spotify.com/artist/0WjOmXeyNIMeAXc0KQ8xfa" class="social-buttons">
+                    <i class="social-icons fa-brands fa-spotify"></i>
+                </a>
+                <a href="https://music.apple.com/us/artist/wilder/1563037992" class="social-buttons">
+                    <i class="social-icons fa-brands fa-apple"></i>
+                </a>
+            </div>
+        </div>
+        <div class=" d-flex justify-content-center mt-3">
+            <div>
+                <a href="https://www.ruderecords.com/products/better-days-vinyl-lp" class="rounded get-wild-btn roboto-bold d-block">BETTER DAYS</a>
+                <!-- <a class="rounded get-wild-btn roboto-bold">TICKETS</a> -->
+            </div>
+        </div>
+    </div>
+    <div class="container mw-100 p-0">
+        <img src="images/better-days-artwork.png" alt="" class="hero-img">
+    </div>
+    <nav class="navbar-bottom position-absolute bottom-0 d-flex justify-content-end">
+        <div class="align-self-end">
+            <p class="legal-text roboto-light m-3">&copy; 2024 Wilder. All rights reserved.</p>
+        </div>
+    </nav>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Delay before adding the fade-in class
+            setTimeout(function() {
+                document.querySelector('.wilder-logo-container').classList.add('fade-in');
+            }, 1000); // Delay of 1 second (1000 milliseconds)
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
