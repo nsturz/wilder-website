@@ -60,6 +60,7 @@
 
 /* Additional button styles */
 .get-wild-btn {
+    text-decoration: none;
     background-color: #fbcfd3;
     color: #093445;
     padding: 0.5rem 1rem;
@@ -70,8 +71,21 @@
 }
 
 .get-wild-btn:hover {
+    cursor: pointer;
     transform: scale(1.1); /* Slightly enlarge on hover */
     background-color: whitesmoke; /* Optional: Slight color change on hover */
+}
+
+.legal-text{
+    color: whitesmoke;
+    font-size: 0.5rem;
+    align-self: end;
+}
+
+.navbar-bottom {
+    bottom: 0;
+    width: 100%; /* Ensure it spans full width */
+    background: transparent; /* Keep it transparent to show the image */
 }
 
 .roboto-bold {
@@ -80,22 +94,28 @@
     font-style: normal;
 }
 
+.roboto-light {
+    font-family: "Roboto", system-ui;
+    font-weight: 300;
+    font-style: normal;
+  }
+
 /* Social media icon styles */
 .social-icons {
     color: #093445;
     font-size: 1.5em;
-}
-
-.social-buttons {
-    background: transparent;
-    border: none;
-    margin-left: 1rem;
-    margin-right: 1rem;
     transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
 
 }
 
-.social-buttons:hover {
+.social-buttons {
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.social-icons:hover {
+    cursor: pointer;
     transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
