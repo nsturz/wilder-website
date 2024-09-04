@@ -18,8 +18,7 @@
     z-index: 1;
 }
 
-/* Base styles for the hero image */
-/* Base styles for the hero image */
+
 .hero-img {
     width: 100%; /* Use percentage width to fill the container */
     height: 100%; /* Use percentage height to fill the container */
@@ -51,7 +50,7 @@
     background: rgba(255, 255, 255, 0); /* Keep it transparent */
     z-index: 2; /* Ensure this is above the gradient */
     opacity: 0; /* Start hidden */
-    transition: opacity 300ms ease-in, transform 300ms ease-in; /* Fade and slide in transition */
+    transition: opacity 500ms ease-in, transform 500ms ease-in; /* Fade and slide in transition */
 }
 
 .wilder-logo-container.fade-in {
@@ -66,6 +65,13 @@
     padding: 0.5rem 1rem;
     border: none;
     font-size: 0.8rem;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    margin: 0.5rem;
+}
+
+.get-wild-btn:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    background-color: whitesmoke; /* Optional: Slight color change on hover */
 }
 
 .roboto-bold {
@@ -85,6 +91,12 @@
     border: none;
     margin-left: 1rem;
     margin-right: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+
+}
+
+.social-buttons:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
 /* Media query adjustments for smaller screens */
