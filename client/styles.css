@@ -82,6 +82,16 @@
     align-self: end;
 }
 
+.navbar-bottom {
+    position: fixed; /* Change from absolute to fixed */
+    bottom: 0; /* Stick to the bottom of the viewport */
+    width: 100%; /* Ensure full width */
+    display: flex; /* Flex display for alignment */
+    justify-content: end; /* Align items to the right */
+    align-items: flex-end; /* Align items to the bottom */
+    padding: 10px; /* Optional padding for visual spacing */
+}
+
 
 .roboto-bold {
     font-family: "Roboto", sans-serif;
