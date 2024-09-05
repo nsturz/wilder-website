@@ -82,11 +82,6 @@
     align-self: end;
 }
 
-.navbar-bottom {
-    bottom: 0;
-    width: 100%; /* Ensure it spans full width */
-    background: transparent; /* Keep it transparent to show the image */
-}
 
 .roboto-bold {
     font-family: "Roboto", sans-serif;
